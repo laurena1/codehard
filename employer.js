@@ -77,14 +77,12 @@ mongoose.connection.once('open', function() {
         
     };
 
-    //we write both of these objects - which must be properly structured - using
-    //the create method.  The callback allows us to catch the error OR
-    //work with or even find, the new objects.
+    
     Students.create([employee1, employee2, employee3, employee4, employee5], function(err) {
         for (var i = 1; i < arguments.length; i++) {
             console.log("\nCreated document: " + arguments[i].first + arguments[i].last);
         }
-        //close up shop
+        
         mongoose.disconnect();
     });
 });

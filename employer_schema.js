@@ -71,7 +71,7 @@ var employeeSchema = new Schema({
 {
     collection: 'students'
 });
-//Here we are adding a method to the schema. This makes our documents more object-like.
+
 
 
 exports.employeeSchema = employeeSchema;

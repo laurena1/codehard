@@ -6,23 +6,23 @@ var Schema = mongoose.Schema;
 var studentSchema = new Schema({
    
     first: {
-        type: String,
-        index: 1,
-        required: true,
-        unique: true
+            type: String,
+            index: 1,
+            required: true,
+            unique: true
     },
         last: {
-        type: String,
-        index: 1,
-        required: true,
-        unique: true
+            type: String,
+            index: 1,
+            required: true,
+            unique: true
     },
         
         major: {
-        type: String,
-        index: 1,
-        required: true,
-        unique: true
+            type: String,
+            index: 1,
+            required: true,
+            unique: true
       
     },
         phone: {
@@ -40,23 +40,23 @@ var studentSchema = new Schema({
         },
         
          id: {
-        type: Number,
-        index: 1,
-        required: true,
-        unique: true
+            type: Number,
+            index: 1,
+            required: true,
+            unique: true
     },
         city: {
-        type: String,
-        index: 1,
-        required: true,
-        unique: true
+            type: String,
+            index: 1,
+            required: true,
+            unique: true
     },
         
         state: {
-        type: String,
-        index: 1,
-        required: true,
-        unique: true
+            type: String,
+            index: 1,
+            required: true,
+            unique: true
       
     },
         

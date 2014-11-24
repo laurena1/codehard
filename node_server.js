@@ -31,8 +31,7 @@ app.on('close', function() {
     mongoose.disconnect();
 });
 
-//Here we use a simple get route that handles the /path
-//app.get(path, [middleware,...], callback). The callback parameter is the requests handler that should handle the request and send the response back to the client. The callback parameter should accept a Request object as athe first parameter and Response object as the second.
+
 app.get('/', function(req, res) {   
     var output = "\n";
     output += "";
