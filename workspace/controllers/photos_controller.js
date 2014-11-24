@@ -1,3 +1,4 @@
+//This page defines the functionality for the routes that require interaction with Mongodb to get one or all of the photo objects for this application.
 var mongoose = require('mongoose'),
     Photo = mongoose.model('Photo');
     

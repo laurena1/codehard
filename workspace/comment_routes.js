@@ -1,3 +1,4 @@
+//This filedefines the routes for the Express server. This file also handles the functionality that does not apply to the db.
 var express = require('express');
 module.exports = function(app) {
     

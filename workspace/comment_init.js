@@ -1,3 +1,4 @@
+//This file provides standalone initalization code. It adds teh initial page object and several photos to MongoDB database to initialize the project.
 var mongoose = require('mongoose');
 var db = mongoose.connect('mongodb://localhost/comments');
 require('./models/comments_model.js');

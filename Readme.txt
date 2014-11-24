@@ -16,3 +16,4 @@ Chern: Help us create student and professor view
 Collectively: Work on login view(user auth. and roles)
 
 11/23/2014: We all worked on integrating 26 and 27.
+11/24/2014: We were missing a file (comment_app.js), which we added.

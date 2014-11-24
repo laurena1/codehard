@@ -1,3 +1,4 @@
+//This file defines comments page model
 var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
 var PageSchema = new Schema({

@@ -1,4 +1,4 @@
-
+//This file defines the functionality for the routes that require interaction with MongoDB database to get and update comments.
 var mongoose = require('mongoose'),
     CommentThread = mongoose.model('CommentThread'),
     Reply = mongoose.model('Reply');

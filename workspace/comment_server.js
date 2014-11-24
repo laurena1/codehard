@@ -1,3 +1,4 @@
+//This file loads the necessary libraries, creats a connection to MongoDB and starts the Express server. This file is the main application file.
 var express = require('express');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');

@@ -1,4 +1,4 @@
-/*As usual, bring in mongoose and make a schema */
+//This defines the comment photo model
 var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
     
