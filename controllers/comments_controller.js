@@ -89,8 +89,12 @@ function updateCommentThread(req, res, commentThread) {
         });
 }
 
-function generateRandomUsername() {
+/*function generateRandomUsername() {
    
     var users = ['DaNae', 'Brad', 'Brendan', 'Caleb', 'Aedan', 'Taeg'];
     return users[Math.floor((Math.random() * 5))];
+}*/
+
+function putUserName(req, res) {
+    
 }

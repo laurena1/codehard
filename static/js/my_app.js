@@ -1,5 +1,5 @@
 alert("dude");
-angular.module('myApp', []).
+angular.module('myApp', []);
     //sets up the controller on this module
     controller('myController', ['$scope', '$http',
         function($scope, $http) {

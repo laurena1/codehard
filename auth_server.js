@@ -5,6 +5,7 @@ var expressSession = require('express-session');
 var mongoStore = require('connect-mongo')({session: expressSession});
 var mongoose = require('mongoose');
 require('./models/users_model.js');
+require('./models/student_schemamodel.js');
 var connString = "mongodb://" + process.env.IP + ":27017/";
 console.log(connString + 'myapp');
 var conn = mongoose.connect(connString + 'myapp');
@@ -12,9 +13,9 @@ var conn = mongoose.connect(connString + 'myapp');
 var app = express();
 
 
-require('./models/comments_model.js');
-require('./models/photo_model.js');
-require('./models/page_model.js');
+//require('./models/comments_model.js');
+//require('./models/photo_model.js');
+//require('./models/page_model.js');
 
 app.engine('.html', require('ejs').__express);
 app.set('views', __dirname + '/views');

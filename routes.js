@@ -13,7 +13,7 @@ module.exports = function(app) {
   );
   app.get('/', function(req, res){
     if (req.session.user) {
-      res.render('photos', {username: req.session.username,
+      res.render('index', {username: req.session.username,
                            msg:req.session.msg}); //from index to photos
     } else {
       req.session.msg = 'Access denied!';
@@ -60,6 +60,7 @@ module.exports = function(app) {
   app.post('/user/delete', users.deleteUser);
   app.post('/login', users.login);
   app.get('/user/profile', users.getUserProfile);
+  
   
   
   /*app.get('/photos', photos.getPhotos);

@@ -1,3 +1,4 @@
+<!-- working with Angular here -->
 <!doctype html>
 <html ng-app="myApp">
 
@@ -8,8 +9,12 @@
 
 <body>
     <div ng-controller="myController">
-        <h2>Welcome. You are Logged In as <%= username %></h2>
-
+        <h2>Hello There!! <%= username %></h2>
+        
+        <p>
+            Name: {{user.firstname}} {{user.lastname}}
+        </p>
+        
         <a href="/logout">logout</a>
         <a href="/user">Edit User</a>
     </div>
