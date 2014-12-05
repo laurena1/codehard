@@ -19,12 +19,11 @@ exports.getStudent = function(req, res) {
 	
 	
 	exports.getStudents = function(req, res) {
-	alert("Hola !")
 	Student.find()
 	.exec(function(err, students) { 
 		if(err)
 	{
-	alert(err);
+	//alert(err);
 	}
 	if(!students) {
 	res.json(404, {

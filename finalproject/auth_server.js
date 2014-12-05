@@ -9,6 +9,7 @@ var mongoose = require('mongoose');
 
 //ensure that the User model is registered with Mongoose/MongoDB
 require('./models/users_model.js');
+require('./models/students_model.js');
 
 //a C9-oriented connection string
 //make sure MongoDB is running first
