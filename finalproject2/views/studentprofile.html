@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<link rel="stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+</head>
+
+<body ng-controller="userController">
+<div class="container">
+
+<h3>CIDM Students</h3>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Edit</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="noobs in students">
+      <td>
+        <button class="btn" ng-click="editUser(user.id)">
+          <span class="glyphicon glyphicon-pencil"></span>  Edit
+        </button>
+      </td>
+      <td>{{ noobs.first }}</td>
+      <td>{{ noobs.last }}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h3 ng-hide="edit">Edit Student Info:</h3>
+
+<form class="form-horizontal">
+  <div class="form-group">
+    <label class="col-sm-2 control-label">First Name:</label>
+    <div class="col-sm-10">
+    <input type="text" ng-model="first" ng-disabled="!edit" placeholder="First Name">
+    </div>
+  </div> 
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Last Name:</label>
+    <div class="col-sm-10">
+    <input type="text" ng-model="last" ng-disabled="!edit" placeholder="Last Name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Email:</label>
+    <div class="col-sm-10">
+    <input type="password" ng-model="email" placeholder="Email">
+    </div>
+    </div>
+    <div class="form-group">
+    <label class="col-sm-2 control-label">Major:</label>
+    <div class="col-sm-10">
+    <input type="password" ng-model="email" placeholder="Major">
+    </div>
+    </div>
+
+
+<h3 ng-hide="edit">Developent:</h3>
+
+    <div class="form-group">
+    <label class="col-sm-2 control-label">Job or Internship:</label>
+    <div class="col-sm-10">
+    <input type="password" ng-model="email" placeholder="Job or Internship">
+    </div>
+    </div>
+    <div class="form-group">
+    <label class="col-sm-2 control-label">Letters of Rec:</label>
+    <div class="col-sm-10">
+    <input type="password" ng-model="email" placeholder="Quantity">
+    </div>
+  </div>
+      <div class="form-group">
+    <label class="col-sm-2 control-label">Certificates:</label>
+    <div class="col-sm-10">
+    <input type="password" ng-model="email" placeholder="Quantity">
+    </div>
+    </div>
+
+       <div class="form-group">
+    <label class="col-sm-2 control-label">Mock Interviews:</label>
+    <div class="col-sm-10">
+    <input type="password" ng-model="email" placeholder="Quantity">
+    </div>
+    </div>
+   <div class="form-group">
+    <label class="col-sm-2 control-label">Personal Wesbite:</label>
+    <div class="col-sm-10">
+    <input type="password" ng-model="email" placeholder="Website">
+    </div>
+    </div>
+     <div class="form-group">
+    <label class="col-sm-2 control-label">Github:</label>
+    <div class="col-sm-10">
+    <input type="password" ng-model="email" placeholder="Github Link">
+    </div>
+    </div>
+
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Comments:</label>
+    <div class="col-sm-10">
+    <input type="password" ng-model="passw2" placeholder="Comment">
+    </div>
+  </div>
+</form>
+
+<hr>
+<button class="btn btn-success" ng-disabled="error || incomplete">
+<span class="glyphicon glyphicon-save"></span>  Save Changes
+</button>
+
+</div>
+
+<script src= "my_app.js"></script>
+
+</body>
+</html>
