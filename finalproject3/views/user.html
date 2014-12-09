@@ -1,0 +1,45 @@
+<!doctype html>
+<html ng-app="myApp">
+
+<head>
+    <title>Welcome</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css" />
+</head>
+
+<body>
+<center>
+    <div class="form-container" ng-controller="myController">
+        <p class="form-header">User Profile</p>
+        <form method="POST" action="/user/update">
+            <label>Username:</label>
+            <input type="text" name="username" ng-model="user.username" disabled>
+            <br>
+            <label>Email:</label>
+            <input type="email" name="email" ng-model="user.email">
+            <br>
+            <label>First Name:</label>
+            <input type="text" name="firstName" ng-model="user.firstName">
+			<br>
+            <label>Last Name:</label>
+            <input type="text" name="lastName" ng-model="user.lastName">
+			<br>
+            <label>College:</label>
+            <input type="text" name="College" ng-model="user.College">
+
+			
+            <input type="submit" value="Save">
+        </form>
+    </div>
+    <form method="POST" action="/user/delete">
+        <input type="submit" value="Delete User">
+		
+    </form>
+	</center>
+	<a href="/">Homepage</a>
+    <hr>
+    <%= msg %>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
+    <script src="/static/js/my_app.js"></script>
+</body>
+
+</html>

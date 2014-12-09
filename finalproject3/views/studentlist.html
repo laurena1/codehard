@@ -1,0 +1,30 @@
+<!doctype html>
+<html ng-app="myApp">
+
+<head>
+    <title>User Login and Sessions</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css" />
+</head>
+
+<body>
+	<div ng-controller="listController">
+		<p>{{selectedEmail}}</p>
+		<br/>
+		<ul>
+			<li ng-repeat="noob in students">
+				<!--<button>{{noob.first}} {{noob.last}}</button>-->
+				<a href="#" ng-click='getSelectedUser(noob.email)'>{{noob.first}} {{noob.last}}</a>
+			</li>
+			
+		</ul>
+        <a href="/logout">logout</a>
+		<a href="/">Homepage</a>
+        <!--<a href="/user">Edit User</a> -->
+    </div>
+    <hr>
+    <%= msg %>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
+	<script src="/static/js/my_app.js"></script>
+		
+</body>
+</html>

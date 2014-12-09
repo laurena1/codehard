@@ -1,0 +1,38 @@
+<!doctype html>
+<html ng-app="myApp">
+
+<head>
+    <title>User Login and Sessions</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css" />
+</head>
+
+<body>
+
+    <div ng-controller="myController">
+	<center>
+        <h2>Welcome. You are Logged In as <%= username %></h2>
+		<hr/>
+		 
+		<h1>Professor Profile</h1>
+		<div class="form-container">
+		<p><b>First Name:</b> {{user.firstName}}</p>
+		<p><b>Last Name:</b> {{user.lastName}}</p>
+		<p><b>College:</b> {{user.College}}</p>
+		<p><b>Email:</b> {{user.email}}</p>
+		
+		
+		
+		
+        <a href="/logout">logout</a>
+        <a href="/user">Edit Profile</a>
+		<a href="/list">Student List</a>
+		</center>
+    </div>
+	</div>
+    <hr>
+    <%= msg %>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
+        <script src="/static/js/my_app.js"></script>
+</body>
+
+</html>
