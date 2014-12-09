@@ -1,0 +1,36 @@
+<!--This view shows the list of students pulled from the database that is rendered in a list and when you click on the checkbox it will display the rest of the students information. We all worked on this, however, Lauren and Chern worked a little more on this. -->
+<!doctype html>
+<html ng-app="myApp">
+
+<head>
+    <title>User Login and Sessions</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css" />
+</head>
+
+<body>
+	<div ng-controller="listController">
+	
+		<br/>
+		
+			<div ng-repeat="noob in students">
+			<ul>
+			<!--The code below will show the list of students along with the students details. -->
+				<span><li>{{noob.first}}{{noob.last}}<input type="checkbox" ng-model="mustShow" /></li></span>
+    		    <span ng-show="mustShow"><li>{{noob.email}}</li><li>{{noob.major}}</li>
+				
+				</ul>
+			</div>
+		
+    </div>
+	
+        <a href="/logout">logout</a>
+		<a href="/">Homepage</a>
+        <!--<a href="/user">Edit User</a> -->
+    </div>
+    <hr>
+    <%= msg %>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
+	<script src="/static/js/my_app.js"></script>
+		
+</body>
+</html>
